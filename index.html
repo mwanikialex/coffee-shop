@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <img src="image/logo.png" alt="Meta Barista Logo" width="100" height="100">
+
+    <a href="#" class="logo">Meta Barista</a>
+
+    <nav class="navbar">
+        <a href="#home" class="nav-link">home</a>
+        <a href="#about" class="nav-link">about</a>
+        <a href="#menu" class="nav-link">menu</a>
+        <a href="#review" class="nav-link">review</a>
+      <!-- <a href="#book" class="nav-link">book</a> -->
+        <a href="#ordervendingmachine" class="nav-link">order</a>
+    </nav>
+
+    <a href="#ordervendingmachine" class="btn">Make your order NOW</a>
+</header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>More than Coffee, It's a Meta Journey.</h3>
+                <a href="#menu" class="btn">buy one now</a>
+            </div>
+
+            <div class="image">
+                <img src="image/home-img-1.png" class="main-home-image" alt="">
+            </div>
+        </div>
+
+        <div class="image-slider">
+            <img src="image/home-img-1.png" alt="">
+            <img src="image/home-img-2.png" alt="">
+            <img src="image/home-img-3.png" alt="">
+        </div>
+    </section>
+
+<!-- ORDER VENDING MACHINE -->
+<section class="ordervendingmachine" id="ordervendingmachine">
+    <h1 class="heading">Customize Your Coffee Order</h1>
+    <!-- Order form -->
+    <form action="#">
+        <label for="coffeeType">Select Coffee Type:</label>
+        <select id="coffeeType" name="coffeeType">
+            <option value="ethiopian">Ethiopian Arabica - KD 2.50</option>
+            <option value="colombian">Colombian Supremo - KD 3.00</option>
+            <option value="arabian">Arabian Lush - KD 2.75</option>
+            <option value="mocha">Mocha - KD 3.50</option>
+            <option value="excel">Excelsa - KD 2.80</option>
+            <option value="liberica">Liberica - KD 3.20</option>
+        </select>
+
+        <label for="milkType">Select Milk Type:</label>
+        <select id="milkType" name="milkType">
+            <option value="regular">Regular Milk - KD 1.00</option>
+            <option value="almond">Almond Milk - KD 1.50</option>
+            <option value="soy">Soy Milk - KD 1.25</option>
+            <option value="oat">Oat Milk - KD 1.75</option>
+            <!-- Add more milk options based on your menu -->
+        </select>
+
+        <label for="syrup">Select Syrup:</label>
+        <select id="syrup" name="syrup">
+            <option value="vanilla">Vanilla - KD 0.50</option>
+            <option value="caramel">Caramel - KD 0.75</option>
+            <option value="hazelnut">Hazelnut - KD 0.60</option>
+            <!-- Add more syrup options based on your menu -->
+        </select>
+
+        <label for="iceFlavor">Select Ice Flavor:</label>
+        <select id="iceFlavor" name="iceFlavor">
+            <option value="regular">Regular - KD 0.25</option>
+            <option value="lemonCreme">Lemon Creme - KD 0.30</option>
+            <option value="espresso">Espresso - KD 0.35</option>
+            <option value="cardamomSaffron">Cardamom Saffron - KD 0.40</option>
+            <!-- Add more ice flavor options based on your menu -->
+        </select>
+
+        <label for="sweetener">Select Natural Sweetener:</label>
+        <select id="sweetener" name="sweetener">
+            <option value="sugar">Sugar - KD 0.20</option>
+            <option value="honey">Honey - KD 0.25</option>
+            <option value="agave">Agave - KD 0.30</option>
+            <!-- Add more sweetener options based on your menu -->
+        </select>
+
+        <label for="coffeeQuantity">Coffee Quantity:</label>
+        <input type="number" id="coffeeQuantity" name="coffeeQuantity" min="1" value="1">
+
+        <label for="snackType">Select Snack:</label>
+        <select id="snackType" name="snackType">
+            <option value="cheesy-pie">Cheesy Pie - KD 1.80</option>
+            <option value="halloumi-pesto">Halloumi Pesto Pie - KD 2.00</option>
+            <option value="cinnamon-balls">Cinnamon Balls - KD 1.50</option>
+            <option value="tamriya-biscuits">Tamriya Biscuits - KD 1.70</option>
+        </select>
+
+        <label for="snackQuantity">Snack Quantity:</label>
+        <input type="number" id="snackQuantity" name="snackQuantity" min="1" value="1">
+
+        <input type="submit" value="Place Order" class="btn">
+        <button type="button" class="btn">Send Coffee Gift</button>
+    </form>
+</section>
+
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h1 class="heading">About Us <span>Why Choose Us</span></h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="image/logo.png" alt="About Us Image">
+        </div>
+
+        <div class="content">
+            <h3 class="title">What Makes Our Coffee Special!</h3>
+            <p>At Meta Barista, we are passionate about crafting exceptional coffee experiences. Our commitment to quality
+                and the pursuit of perfection sets us apart.</p>
+            <p>Explore the rich aroma and unique flavors carefully curated from the finest coffee beans around the world.
+                From the comforting warmth of our Ethiopian blend to the bold notes of our Robusta selection, each cup
+                tells a story of dedication and love for the art of coffee.</p>
+            <a href="#" class="btn">Read More</a>
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/about-icon-1.png" alt="Quality Coffee Icon">
+                    <h3>Quality Coffee</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-2.png" alt="Our Branches Icon">
+                    <h3>Our Branches</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-3.png" alt="Free Delivery Icon">
+                    <h3>Free Delivery</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- MENU -->
+<section class="menu" id="menu">
+    <h1 class="heading">Our Menu <span>Delight in Every Sip</span></h1>
+
+    <div class="box-container">
+        <!-- Coffee Beans -->
+        <a href="#" class="box">
+            <img src="image/menu-1.png" alt="Ethiopian Coffee">
+            <div class="content">
+                <h3>Ethiopian Coffee Beans</h3>
+                <p>Distinctive aroma and rich flavor, sourced from Ethiopia.</p>
+                <span>Price: 8.99 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-2.png" alt="Arabica Coffee">
+            <div class="content">
+                <h3>Arabica Coffee Beans</h3>
+                <p>Smooth and mild blend, perfect for coffee enthusiasts.</p>
+                <span>Price: 8.99 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-3.png" alt="Robusta Coffee">
+            <div class="content">
+                <h3>Robusta Coffee Beans</h3>
+                <p>Bold and robust flavor, a true coffee lover's choice.</p>
+                <span>Price: 8.99 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-4.png" alt="Colombian Supremo Coffee">
+            <div class="content">
+                <h3>Colombian Supremo Coffee Beans</h3>
+                <p>Indulge in the smooth and full-bodied taste of Colombian beans.</p>
+                <span>Price: 8.99 KD</span>
+            </div>
+        </a>
+
+        <!-- Tea -->
+        <a href="#" class="box">
+            <img src="image/menu-5.png" alt="Karak Tea">
+            <div class="content">
+                <h3>Karak Tea</h3>
+                <p>Experience the rich and spiced goodness of Karak.</p>
+                <span>Price: 4.99 KD</span>
+            </div>
+        </a>
+
+        <!-- Natural Syrups -->
+        <a href="#" class="box">
+            <img src="image/menu-1.png" alt="Vanilla Syrup">
+            <div class="content">
+                <h3>Vanilla Syrup</h3>
+                <p>Sweeten your drink with the classic essence of vanilla.</p>
+                <span>Price: 2.99 KD</span>
+            </div>
+        </a>
+
+        <!-- Additional Coffee Options -->
+        <a href="#" class="box">
+            <img src="image/menu-1.png" alt="Skinny Caramel Syrup">
+            <div class="content">
+                <h3>Skinny Caramel Syrup</h3>
+                <p>Indulge in a low-calorie treat with our skinny caramel syrup.</p>
+                <span>Price: 2.50 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-3.png" alt="Hazelnut Syrup">
+            <div class="content">
+                <h3>Hazelnut Syrup</h3>
+                <p>Experience the rich and nutty flavor of hazelnuts in your drink.</p>
+                <span>Price: 2.50 KD</span>
+            </div>
+        </a>
+
+        <!-- Ice Flavors -->
+        <a href="#" class="box">
+            <img src="image/menu-3.png" alt="Regular Ice Flavor">
+            <div class="content">
+                <h3>Regular Ice Flavor</h3>
+                <p>Cool down with our classic regular ice flavor.</p>
+                <span>Price: 1.50 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-3.png" alt="Lemon Creme Ice Flavor">
+            <div class="content">
+                <h3>Lemon Creme Ice Flavor</h3>
+                <p>Refresh yourself with the zesty twist of lemon creme ice flavor.</p>
+                <span>Price: 1.75 KD</span>
+            </div>
+        </a>
+
+        <!-- Snacks & Bites -->
+        <a href="#" class="box">
+            <img src="image/menu-1.png" alt="Cheesy Pie">
+            <div class="content">
+                <h3>Cheesy Pie</h3>
+                <p>Indulge in the savory goodness of our cheesy pie.</p>
+                <span>Price: 2.50 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-2.png" alt="Halloumi Pesto Pie">
+            <div class="content">
+                <h3>Halloumi Pesto Pie</h3>
+                <p>Savor the delightful combination of halloumi and pesto in our pie.</p>
+                <span>Price: 2.75 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-3.png" alt="Cinnamon Balls">
+            <div class="content">
+                <h3>Cinnamon Balls</h3>
+                <p>Enjoy the sweet and aromatic taste of our cinnamon balls.</p>
+                <span>Price: 1.99 KD</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-4.png" alt="Tamriya Biscuite">
+            <div class="content">
+                <h3>Tamriya Biscuit</h3>
+                <p>Delight in the rich flavor of our Tamriya biscuit.</p>
+                <span>Price: 1.75 KD</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- REVIEW -->
+<section class="review" id="review">
+    <h1 class="heading">Customer Reviews <span>What People Are Saying</span></h1>
+
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-1.png" alt="Customer 1">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p> Meta Barista's coffee is absolutely delightful! The aroma, the taste—pure perfection. I'm a loyal customer now."
+                </p>
+                <h3>Alice Johnson</h3>
+                <span>Happy Coffee Enthusiast</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-2.png" alt="Customer 2">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p> Meta Barista's tea is a soothing experience! The Karak is my go-to choice—always brewed to perfection."
+                </p>
+                <h3>Michael Rodriguez</h3>
+                <span>Tea Lover</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-3.png" alt="Customer 3">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p> Meta Barista's ambiance is as inviting as their coffee! The perfect spot for a relaxing cup of joy."
+                </p>
+                <h3>Emily Parker</h3>
+                <span>Satisfied Regular</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-4.png" alt="Customer 4">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p> Meta Barista's snacks are a delightful addition! The Cheesy Pie is my guilty pleasure—absolutely scrumptious."
+                </p>
+                <h3>David Smith</h3>
+                <span>Snack Connoisseur</span>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!--  
+<section class="book futuristic" id="book">
+    <h1 class="heading">Booking <span>Reserve a Table</span></h1>
+
+    <form action="#" class="booking-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="box" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" class="box" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" class="box" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" placeholder="Enter number of guests" class="box" required>
+        </div>
+
+        <div class="form-group">
+            <label for="branch">Select Branch:</label>
+            <select id="branch" name="branch" class="box" required>
+                <option value="" disabled selected>Select a branch</option>
+                <option value="Sharq">Sharq</option>
+                <option value="Mishref">Mishref</option>
+                <option value="Abdilee">Abdilee</option>
+                <option value="Al-Wafrah">Al-Wafrah</option>
+                <option value="Al-Khiran">Al-Khiran</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" class="box" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" class="box" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Special Requests:</label>
+            <textarea id="message" name="message" placeholder="Any special requests or notes?" class="box" rows="4"></textarea>
+        </div>
+
+        <input type="submit" value="Reserve Table" class="btn">
+    </form>
+</section>
+
+
+-->
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Sharq</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Mishref</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Abdilee</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Al-Wafrah</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Al-Khiran</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i> metabarista@gmail.com</a>
+                <a href="#"><i class="fas fa-envelope"></i> Perú, Lima</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            </div>
+        </div>
+
+        <div class="credit" background-color="pink" >@ 2023 <span>META BARISTA </span> | all rights reserved</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
